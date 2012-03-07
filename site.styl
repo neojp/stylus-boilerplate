@@ -1,0 +1,92 @@
+// web fonts
+@import url("http://fonts.googleapis.com/css?family=Rokkitt");
+
+// variables
+font_helvetica = "Helvetica", Arial, sans-serif
+font_rokkitt = "Rokkitt", font_helvetica
+link_blue = #0e76bc
+
+// CSS Framework
+@import "normalize"
+@import "classes"
+@import "wordpress"
+
+.container
+	margin 0 auto
+	position relative
+	width 1000px
+
+body
+	background #f3f3f3
+	color #222
+	font-size 12px
+	font-family font_helvetica
+	min-width 1000px
+
+a
+	color link_blue
+	text-decoration underline
+
+	&:hover
+		text-decoration none
+
+p
+	margin 0 0 1em
+
+h1, h2, h3, h4, h5, h6
+	color #333
+
+// debugging purposes
+pre
+	font-size 11px !important
+	text-transform none !important
+
+// forms	
+input, textarea
+	background #fcfcfc
+	border 1px solid #c9c9c9
+	border-radius()
+	box-shadow inset 0 0 5px #eee
+	color #222
+	font-family font_helvetica
+	font-size 12px
+	padding 0.3em 0.5em
+
+	&:focus
+		border-color #b6deff
+		box-shadow inset 0 0 0 1px #b6deff, inset 0 0 5px #eee
+		outline 0
+
+textarea
+	height 110px
+	line-height 1.2
+	padding 8px 10px
+
+button, .button, .gform_button, input[type="button"], input[type="submit"]
+	background #3c90c9
+	background linear-gradient(top, #3c90c9, #0e76bc)
+	border 1px solid #0e76bc
+	border-radius 10px
+	box-shadow none
+	box-sizing border-box
+	color #fff !important
+	cursor pointer
+	display inline-block
+	font-family font_rokkitt
+	font-size 14px
+	font-weight bold
+	padding 5px 15px
+	position relative
+	text-align center
+	text-decoration none
+	text-shadow	1px 1px 3px #0e76bc
+	text-transform uppercase
+	transition()
+
+	&:hover
+		background-color rgba(#ee575c, 0.25)
+		box-shadow inset 0 0 5px rgba(#7b7b7b, 0.2)
+
+// input buttons don't support :after
+input[type="button"], input[type="submit"]
+	padding 0 25px
