@@ -6,8 +6,8 @@
 
 * Default values for:
   * **border-radius:** 5px
-  * **box-shadow:** 0 0 5px rgba(#000, 0.10)
-  * **text-shadow:** 1px 1px 1px rgba(#000, 0.25)
+  * **box-shadow:** 0 0 5px rgba(0, 0, 0, 0.10)
+  * **text-shadow:** 1px 1px 1px rgba(0, 0, 0, 0.25)
   * **transition:** all 0.150s linear
   * **transition-property:** all
   * **transform:** translate3d(0,0,0)
