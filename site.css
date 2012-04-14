@@ -42,21 +42,22 @@ textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
 html{overflow-y:auto}
 a,a *,label{cursor:pointer}
-.ir{direction:ltr;display:block;height:100%;overflow:hidden;text-align:left;text-indent:100%;white-space:nowrap;width:100%}
-.hidden{display:none;visibility:hidden}
+.ir{direction:ltr;display:block;height:100%;overflow:hidden;position:relative;text-align:left;text-indent:100%;white-space:nowrap;width:100%}
+.hidden{display:none}
 .visuallyhidden{left:-9999px;position:absolute !important;top:-9999px}
 .invisible{visibility:hidden}
-.noselect{-o-user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;-o-user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none;-khtml-user-select:none}
+.noselect{-o-user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none;-khtml-user-select:none}
 .clearfix{zoom:1;}
-.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;visibility:hidden}
-.clearfix:after{clear:both}
+.clearfix:after{clear:both;content:"\0020";display:block;height:0;visibility:hidden}
 .clear{display:block;clear:both;zoom:1}
 .nomargin{margin:0 !important}
 .alignnone{float:none;margin:5px 20px 20px 0}
 .aligncenter{text-align:center;margin:5px auto;}
 img.aligncenter{display:block}
-.alignleft{float:left;margin:5px 20px 20px 0}
-.alignright{float:right;margin:5px 0 20px 20px}
+.alignleft{float:left;margin:5px 20px 20px 0;}
+img.alignleft{margin-top:0}
+.alignright{float:right;margin:5px 0 20px 20px;}
+img.alignright{margin-top:0}
 .alignjustify{text-align:justify}
 .wp-caption{background:#fff;border:1px solid #f0f0f0;max-width:96%;padding:5px 3px 10px;text-align:center;}
 .wp-caption img{border:0;height:auto;margin:0;max-width:98.5%;padding:0;width:auto}
@@ -71,6 +72,6 @@ pre{font-size:11px !important;text-transform:none !important}
 input,textarea{background:#fcfcfc;border:1px solid #c9c9c9;-o-border-radius:5px;-ms-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-o-box-shadow:inset 0 0 5px #eee;-ms-box-shadow:inset 0 0 5px #eee;-moz-box-shadow:inset 0 0 5px #eee;-webkit-box-shadow:inset 0 0 5px #eee;box-shadow:inset 0 0 5px #eee;-webkit-background-clip:padding-box;color:#222;font-family:"Helvetica",Arial,sans-serif;font-size:12px;padding:.3em .5em;}
 input:focus,textarea:focus{border-color:#b6deff;-o-box-shadow:inset 0 0 0 1px #b6deff,inset 0 0 5px #eee;-ms-box-shadow:inset 0 0 0 1px #b6deff,inset 0 0 5px #eee;-moz-box-shadow:inset 0 0 0 1px #b6deff,inset 0 0 5px #eee;-webkit-box-shadow:inset 0 0 0 1px #b6deff,inset 0 0 5px #eee;box-shadow:inset 0 0 0 1px #b6deff,inset 0 0 5px #eee;-webkit-background-clip:padding-box;outline:0}
 textarea{height:110px;line-height:1.2;padding:8px 10px}
-button,.button,.gform_button,input[type="button"],input[type="submit"]{background:#3c90c9;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #3c90c9), color-stop(1, #0e76bc));background:-o-linear-gradient(top, #3c90c9 0%, #0e76bc 100%);background:-ms-linear-gradient(top, #3c90c9 0%, #0e76bc 100%);background:-moz-linear-gradient(top, #3c90c9 0%, #0e76bc 100%);background:-webkit-linear-gradient(top, #3c90c9 0%, #0e76bc 100%);background:linear-gradient(top, #3c90c9 0%, #0e76bc 100%);border:1px solid #0e76bc;-o-border-radius:10px;-ms-border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;-o-box-shadow:none;-ms-box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-background-clip:padding-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff !important;cursor:pointer;display:inline-block;zoom:1;*display:inline;font-family:"Rokkitt","Helvetica",Arial,sans-serif;font-size:14px;font-weight:bold;padding:5px 15px;position:relative;text-align:center;text-decoration:none;-o-text-shadow:1px 1px 3px #0e76bc;-ms-text-shadow:1px 1px 3px #0e76bc;-moz-text-shadow:1px 1px 3px #0e76bc;-webkit-text-shadow:1px 1px 3px #0e76bc;text-shadow:1px 1px 3px #0e76bc;text-transform:uppercase;-o-transition:all .15s linear;-ms-transition:all .15s linear;-moz-transition:all .15s linear;-webkit-transition:all .15s linear;transition:all .15s linear;}
+button,.button,.gform_button,input[type="button"],input[type="submit"]{background:#3c90c9;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #3c90c9), color-stop(1, #0e76bc));background:-o-linear-gradient(top, #3c90c9 0%, #0e76bc 100%);background:-ms-linear-gradient(top, #3c90c9 0%, #0e76bc 100%);background:-moz-linear-gradient(top, #3c90c9 0%, #0e76bc 100%);background:-webkit-linear-gradient(top, #3c90c9 0%, #0e76bc 100%);background:linear-gradient(top, #3c90c9 0%, #0e76bc 100%);border:1px solid #0e76bc;-o-border-radius:10px;-ms-border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;-o-box-shadow:none;-ms-box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-background-clip:padding-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff !important;cursor:pointer;display:inline-block;zoom:1;*display:inline;font-family:"Rokkitt","Helvetica",Arial,sans-serif;font-size:14px;font-weight:bold;padding:5px 15px;position:relative;text-align:center;text-decoration:none;text-shadow:1px 1px 3px #0e76bc;text-transform:uppercase;-o-transition:all .15s linear;-ms-transition:all .15s linear;-moz-transition:all .15s linear;-webkit-transition:all .15s linear;transition:all .15s linear;}
 button:hover,.button:hover,.gform_button:hover,input[type="button"]:hover,input[type="submit"]:hover{background-color:rgba(238,87,92,0.25);-o-box-shadow:inset 0 0 5px rgba(123,123,123,0.20);-ms-box-shadow:inset 0 0 5px rgba(123,123,123,0.20);-moz-box-shadow:inset 0 0 5px rgba(123,123,123,0.20);-webkit-box-shadow:inset 0 0 5px rgba(123,123,123,0.20);box-shadow:inset 0 0 5px rgba(123,123,123,0.20);-webkit-background-clip:padding-box}
 input[type="button"],input[type="submit"]{padding:0 25px}

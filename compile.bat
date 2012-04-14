@@ -1,1 +1,1 @@
-stylus -c -w site.styl
+stylus -u nib -c -w site.styl

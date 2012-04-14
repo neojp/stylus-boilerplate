@@ -8,10 +8,6 @@ url ?= ''
 @import "nib/vendor.styl"
 @import "nib/gradients.styl"
 
-border-radius( n = '' )
-	value = n == '' ? 5px : arguments
-	border-radius value
-
 border-radius( arg = '' )
 	if arg == ''
 		vendor('border-radius', 5px)
@@ -62,7 +58,7 @@ overflow( arg = '' )
 
 text-shadow( arg = '')
 	value = arg == '' ? 1px 1px 1px rgba(#000, 0.25) : arguments
-	vendor('text-shadow', value)
+	text-shadow value
 
 transition( arg = '' )
 	value = arg == '' ? all 0.150s linear : arguments
@@ -75,6 +71,9 @@ transition-property( arg = '' )
 transform( arg = '' )
 	value = arg == '' ? translate3d(0,0,0) : arguments
 	vendor('transform', value)
+	
+	// -webkit-backface-visibility hidden
+	// -webkit-perspective 1000
 
 white-space( arg = 'pre-wrap' )
 	if arg == 'pre-wrap'
@@ -93,10 +92,11 @@ ir()
 	height = arguments && arguments[1] ? arguments[1] : false
 	height = height ? height : width
 
-	direction ltr 
+	direction ltr
 	display block
 	height height
 	overflow hidden
+	position relative
 	text-align left
 	text-indent 100%
 	white-space nowrap
@@ -108,7 +108,6 @@ ir()
 // Accesible & Design hidden classes
 hidden()
 	display none
-	visibility hidden
 
 .hidden
 	hidden()
@@ -117,8 +116,6 @@ visuallyhidden()
 	left -9999px
 	position absolute !important
 	top -9999px
-	//clip rect(1px 1px 1px 1px)
-	//clip rect(1px, 1px, 1px, 1px) 
 
 .visuallyhidden
 	visuallyhidden()
@@ -141,26 +138,20 @@ noselect()
 clearfix()
 	zoom 1
 
-	&:before,
 	&:after  
+		clear both
 		content "\0020"
 		display block
 		height 0
-		visibility hidden  
-
-	&:after  
-		clear both
+		visibility hidden
 
 .clearfix
 	clearfix()
 
-clear()
+.clear
 	display block
 	clear both
 	zoom 1
-
-.clear
-	clear()
 
 // nomargin
 nomargin()
