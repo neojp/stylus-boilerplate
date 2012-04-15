@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "stylus-boilerplate",
+  "version": "0.1.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/neojp/stylus-boilerplate/"
+  },
+  "author" : {
+    "name" : "Joan Piedra",
+    "email" : "joan@joanpiedra.com",
+    "url" : "http://joanpiedra.com",
+    "twitter" : "@neojp"
+  },
+  "engines": {
+    "node": "0.6"
+  },
+  "devDependencies": {
+    "nib": ">= 0.4.0",
+    "stylus": ">= 0.25.0"
+  }
+}
