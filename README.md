@@ -26,11 +26,14 @@
 
 ## Installation ##
 Stylus & Nib are required
+
     npm install -g stylus nib
 
 Compile your *.styl files using the Stylus executable
+
     stylus -u nib site.styl
 
 Or compile it using the [Cake](http://jashkenas.github.com/coffee-script/#cake) task
+
     npm install -g coffee-script
     cake build
