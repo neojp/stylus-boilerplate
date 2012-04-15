@@ -1,5 +1,6 @@
 # My personal Stylus boilerplate #
 
+* Has a custom build task written on [Cake](http://jashkenas.github.com/coffee-script/#cake): `cake build`
 * Uses a custom version of [normalize.css](http://necolas.github.com/normalize.css/)
 * Uses vendor a gradient modules from Stylus' [Nib framework](http://visionmedia.github.com/nib/)
 * Default [WordPress CSS classes](http://codex.wordpress.org/CSS)
@@ -22,3 +23,14 @@
   * No markup floats clearing technique: **clearfix()**
   * Default float clear: **clear()**
   * Forced reset margin: **nomargin()**
+
+## Installation ##
+Stylus & Nib are required
+    npm install -g stylus nib
+
+Compile your *.styl files using the Stylus executable
+    stylus -u nib site.styl
+
+Or compile it using the [Cake](http://jashkenas.github.com/coffee-script/#cake) task
+    npm install -g coffee-script
+    cake build
