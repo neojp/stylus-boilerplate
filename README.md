@@ -21,7 +21,6 @@
   * Invisible elements: **invisible()**
   * Disable text selection: **noselect()**
   * No markup floats clearing technique: **clearfix()**
-  * Default float clear: **clear()**
   * Forced reset margin: **nomargin()**
 
 ## Installation ##
